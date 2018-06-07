@@ -67,6 +67,10 @@ public class HomePageAction implements BaseTest {
         WebElement location = HomePage.autoInput;
         moveToElement("autocomplete__input");
         location.click();
+        HomePage.dateInput.click();
+        HomePage.aDate.click();
+        HomePage.search.click();
+
     }
 }
 

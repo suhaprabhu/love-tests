@@ -33,4 +33,15 @@ public class HomePage extends BasePage {
 
     @FindBy(how=How.CLASS_NAME, using="autocomplete__input")
     public static WebElement autoInput;
+
+    @FindBy(how=How.CLASS_NAME, using="link-input")
+    public static WebElement dateInput;
+
+    // FIXME: Move this to utils and should be straightforward to compose this date format string
+    @FindBy(how=How.CSS, using="time[datetime='2018-6-8']")
+    public static WebElement aDate;
+
+    @FindBy(how=How.CSS, using="a.custom-button__link.custom-button__link--semantic-primary.custom-button__link--garnish-forward.custom-button__link--size-large")
+    public static WebElement search;
+
 }
